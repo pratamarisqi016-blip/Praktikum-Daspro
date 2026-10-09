@@ -36,6 +36,25 @@ public class StudiKasus2 {
             } else {
                 System.out.println("Status : Bukan Juara 1, 2, atau 3. Dana penghargaan tidak diberikan.");
             }
+        } else if (pkm) {
+            System.out.print("Jumlah dokumen : ");
+            int dokumen = risqi.nextInt();
+            System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak lolos) : ");
+            int status = risqi.nextInt();
+
+            // Tingkat 1: PKM
+            if (status == 1) {                               
+                // Tingkat 2: lolos pendanaan
+                if (dokumen >= 4) {                          
+                // Tingkat 3: dokumen lengkap
+                    System.out.println("Status : Dokumen lengkap. Dana penghargaan diberikan.");
+                } else {
+                    System.out.println("Status : Dokumen tidak lengkap (kurang "
+                            + (4 - dokumen) + " dokumen). Dana penghargaan tidak diberikan.");
+                }
+            } else {
+                System.out.println("Status : Tidak lolos pendanaan. Dana penghargaan tidak diberikan.");
+            }
 
         } else {
             System.out.println("Status : Kegiatan Lainnya tidak memperoleh dana penghargaan.");
