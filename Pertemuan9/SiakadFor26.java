@@ -18,7 +18,7 @@ public class SiakadFor26 {
                 if (nilai < terendah) {
                     terendah = nilai;
                 }
-                if (nilai >= 65) {
+                if (nilai >= 59) {
                     lulus++;
                 } else {
                     tidaklulus++;
