@@ -7,13 +7,14 @@ public class Triangle26 {
         System.out.print("Masukkan nilai n = ");
         int n = risqi.nextInt();
 
-        int i = 0;
+        int i = 1;
         while (i <= n) {
-            int j = 0;
-            while (j < i) {
+            int j = 5;
+            while (j >= i) {
                 System.out.print("*");
-                j++;
+                j--;
             }
+            System.out.println();
             i++;
         }
         risqi.close();
