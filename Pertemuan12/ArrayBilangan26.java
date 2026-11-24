@@ -9,10 +9,10 @@ public class ArrayBilangan26 {
     public static void main(String[] args) {
         Scanner risqi = new Scanner (System.in);
         int[] bil = new int[4]; 
-        bil[0] = 5; 
-        bil[1] = 13; 
-        bil[2] = -7; 
-        bil[3] = 17; 
+        bil[0] = 26; 
+        bil[1] = 34; 
+        bil[2] = 4; 
+        bil[3] = 31; 
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil[" + i + "] = " + bil[i]); 
         }
