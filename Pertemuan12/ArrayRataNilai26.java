@@ -6,6 +6,11 @@ public class ArrayRataNilai26 {
     public static void main(String[] args) {
         Scanner risqi = new Scanner (System.in);
 
+        int jumlahElemen;
+
+        System.out.print("Masukkan jumlah mahasiswa : ");
+        jumlahElemen = risqi.nextInt();
+
         int[] nilaiMhs = new int[10]; 
         int total = 0; 
         double rata2; 
